@@ -14,6 +14,9 @@ function printDiv() {
 function gen() {
   $("#qrcodeAddress").html("");
   $("#qrcodePrivate").html("");
+  $("#pwd-container").show();
+  $("#addr-container").show();
+  $("#donate").show();
   var coins = document.getElementById("coins");
   var selection = coins.options[coins.selectedIndex].value;
   
@@ -82,10 +85,6 @@ function getAddressType() {
 	var type = 'legacy'
 	return type
 }
-	
-	
-  $("#pwd-container").show();
-  $("#addr-container").show();
 }
 else if (selection == "Litecoin"){
 newltc();
@@ -151,10 +150,6 @@ function getAddressType() {
 	var type = 'legacy'
 	return type
 }
-	
-	
-  $("#pwd-container").show();
-  $("#addr-container").show();
 }
 
 else if (selection == "Dogecoin"){
@@ -220,10 +215,6 @@ function getAddressType() {
 	var type = 'legacy'
 	return type
 }
-	
-	
-  $("#pwd-container").show();
-  $("#addr-container").show();
 }
 else if (selection == "Raptoreum"){
 newrtm();
@@ -288,10 +279,6 @@ function getAddressType() {
 	var type = 'legacy'
 	return type
 }
-	
-	
-  $("#pwd-container").show();
-  $("#addr-container").show();
 }
 else if (selection == "Dash"){
 newdash();
@@ -356,10 +343,6 @@ function getAddressType() {
 	var type = 'legacy'
 	return type
 }
-	
-	
-  $("#pwd-container").show();
-  $("#addr-container").show();
 }
 
 }
